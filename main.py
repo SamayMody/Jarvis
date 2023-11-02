@@ -9,7 +9,7 @@ openai.api_key = "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"
 enigne = pyttsx3.init()
 
 def transcribe_audio_to_text(filename):
-    recognizer = sr.Recognizer()
+    recognizer = sr.Recognizer() # Creating an instance of the Recognizer class of the sr library
     with sr.AudioFile(filename) as source: # Opening the audio file.
         audio = recognizer.record(source) # Recording the audio
         try:
