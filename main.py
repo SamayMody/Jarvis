@@ -17,7 +17,7 @@ def transcribe_audio_to_text(filename):
         except:
             print("Error in audio_to_text transcribe")
 
-def generate_response(prompt):
+def generate_response(prompt): # Funtion to generate a response from ChatGpt-3
     response = openai.Completion.create(
         enigne="text-davinci-003",
         prompt=prompt,
