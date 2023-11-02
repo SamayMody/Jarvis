@@ -43,7 +43,7 @@ def main():
                 transcription = recognizer.recognize_google(audio)
                 if transcription.lower == 'jarvis':
                     filename = "input.wav"
-                    print("Hello I am Jarvis your personel ai assistant")
+                    print("Hello I am Jarvis your personal ai assistant")
 
 
 
