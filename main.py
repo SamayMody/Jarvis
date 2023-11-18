@@ -1,10 +1,15 @@
 import openai
 import pyttsx3
 import speech_recognition as sr  # Library to transcribe audio to text
-import time
+
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+
 
 # Setting OpenAI API key
-openai.api_key = "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"
+openai.api_key = os.getenv("OPEN_AI_KEY")
 
 # Initializing text-to-speech engine
 engine = pyttsx3.init()
